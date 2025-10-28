@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="calculator" aria-label="Basic calculator">
+    <div class="display" role="status" aria-live="polite" id="display">0</div>
+
+    <div class="keys" role="group" aria-label="Calculator keys">
+      <button class="key key-fn" data-action="clear">C</button>
+      <button class="key key-fn" data-action="invert">±</button>
+      <button class="key key-fn" data-action="percent">%</button>
+      <button class="key key-op" data-action="divide">÷</button>
+
+      <button class="key" data-digit="7">7</button>
+      <button class="key" data-digit="8">8</button>
+      <button class="key" data-digit="9">9</button>
+      <button class="key key-op" data-action="multiply">×</button>
+
+      <button class="key" data-digit="4">4</button>
+      <button class="key" data-digit="5">5</button>
+      <button class="key" data-digit="6">6</button>
+      <button class="key key-op" data-action="subtract">−</button>
+
+      <button class="key" data-digit="1">1</button>
+      <button class="key" data-digit="2">2</button>
+      <button class="key" data-digit="3">3</button>
+      <button class="key key-op" data-action="add">+</button>
+
+      <button class="key" data-digit="0" data-wide="true">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key key-eq" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+
